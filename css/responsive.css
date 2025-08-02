@@ -1,0 +1,252 @@
+@media only screen and (max-width: 1224px) {
+  nav .nav-butt1 {
+    font-size: 14px;
+    display: block;
+  }
+  nav {
+    padding-inline: 10px;
+  }
+  nav .logoLink li a {
+    padding-inline: 10px;
+  }
+  .navbar {
+    padding: 10px 20px;
+  }
+  .nav-links-container {
+    display: none;
+    .nav-menue-butt {
+      display: block;
+    }
+  }
+}
+@media only screen and (max-width: 1180px) {
+  nav .nav-butt1 {
+    display: none;
+  }
+  .home-projects-slider {
+ 
+  display: block;
+}
+.Noswiper{
+  display: none;
+}
+  .nav-menue-butt {
+    display: block;
+    font-size: 30px;
+    padding-left: 20px;
+  }
+  nav .nav-butt2 {
+    display: block;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .nav-links-container {
+    display: none;
+  }
+  .nav-menue-butt {
+    display: block;
+  }
+  .nav-butt1 {
+    display: none;
+  }
+  .nav-butt2 {
+    display: flex;
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+  header input {
+    padding: 15px 30px !important;
+    font-size: medium;
+  }
+
+  header i {
+    font-size: 18px !important;
+  }
+  .searchIcon {
+    left: 1% !important;
+    top: 10px;
+  }
+  header .locationIcon {
+    right: 87.5%;
+  }
+  header form > button {
+    padding: 5px 10px;
+    margin: 5px;
+  }
+  section#browsprosSection .browses div {
+    width: 33.3%;
+  }
+  #Popularprojects .leftSide {
+    display: none;
+  }
+  #Popularprojects .container .rightSide {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+  }
+  footer .upperfooter {
+    flex-direction: column;
+    gap: 10px;
+  }
+  footer .lowerfooter {
+    flex-direction: column;
+    gap: 10px;
+  }
+  footer .lowerfooter .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  footer .lowerfooter .lastpart {
+    flex-direction: column;
+    gap: 10px;
+  }
+  footer .lowerfooter .infos .svg {
+    width: 100%;
+  }
+  footer .lowerfooter .infos {
+    flex-direction: column;
+    gap: 10px;
+  }
+  footer .lowerfooter .links {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+  }
+  #Commonpricingreferences .homeProjects .homeProjCard {
+    width: 100%;
+  }
+  #ExpertAdviceSection .adviceCard {
+    width: 100%;
+  }
+  .image-wrapper img {
+    display: none;
+  }
+  .become-pro .visual {
+    display: none;
+  }
+  .become-pro .text {
+    padding: 50px;
+    width: 100%;
+  }
+  #getfinderapp {
+    display: flex;
+    flex-direction: column;
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 50px;
+    margin: 40px;
+  }
+  #getfinderapp .btns {
+    padding-bottom: 180px;
+  }
+}
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 32px;
+  }
+  header form {
+    flex-direction: column;
+    gap: 1rem;
+    background-color: transparent;
+  }
+  .searchIcon {
+    left: 3% !important;
+    top: 45% !important;
+  }
+  header .locationIcon {
+    left: -5% !important;
+    top: 15% !important;
+  }
+  header .input-wrapper {
+    width: 100%;
+  }
+  header .vr {
+    display: none;
+  }
+  header .input1,
+  header .input2,
+  header form > button {
+    border-radius: 10px !important;
+  }
+  header form > button {
+    width: 100%;
+    padding: 15px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  header {
+    background-size: 300%;
+  }
+  .navbar {
+    padding: 10px 15px;
+  }
+  .logo h3 {
+    display: none;
+  }
+
+  .buttoms {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  header h1 {
+    font-size: 30px;
+    padding-top: 100px;
+  }
+  form > button {
+    bottom: 19% !important;
+    width: 75%;
+    right: 11.4% !important;
+  }
+  form input {
+    padding-bottom: 50px !important;
+    border-radius: 0 !important;
+    padding-left: 50px !important;
+  }
+  form .input1 {
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+  }
+  form .input2 {
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+  }
+  form .locationIcon {
+    right: 80%;
+    top: 26%;
+  }
+  form .searchIcon {
+    top: 56%;
+    left: 4% !important;
+    z-index: 2;
+  }
+  section#browsprosSection .browses div {
+    display: flex;
+    width: 50%;
+  }
+  section#browsprosSection h2 {
+    font-size: 20px;
+    padding: 20px;
+  }
+  #Popularprojects .container .rightSide .rightSideContent {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #Popularprojects
+    .container
+    .rightSide
+    .rightSideContent
+    .projectImgContainer {
+    width: 190px;
+  }
+  .Noswiper {
+    display: none;
+  }
+  .swiper-wrapper {
+    display: block;
+  }
+  footer .lowerfooter .links {
+    gap: 50px;
+  }
+}

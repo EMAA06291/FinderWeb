@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="../librires/fontawesome-free-6.7.2-web/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../css/landing.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body class="">
+    <!-- start of nav -->
+
+    <nav class="navbar">
+      <!-- Hamburger Menu Icon (for mobile) -->
+      <i class="fa-solid fa-bars nav-menue-butt"></i>
+
+      <!-- Logo -->
+      <div class="logo">
+        <a href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="svgIcon"
+            viewBox="0 0 35 34"
+          >
+            <path
+              d="M34.5 16.894v10.731c0 3.506-2.869 6.375-6.375 6.375H17.5h-.85C7.725 33.575.5 26.138.5 17c0-9.35 7.65-17 17-17s17 7.544 17 16.894z"
+              fill="#d85151"
+            ></path>
+            <g fill-rule="evenodd">
+              <path
+                d="M17.5 13.258c-3.101 0-5.655 2.554-5.655 5.655s2.554 5.655 5.655 5.655 5.655-2.554 5.655-5.655-2.554-5.655-5.655-5.655zm-9.433 5.655c0-5.187 4.246-9.433 9.433-9.433s9.433 4.246 9.433 9.433a9.36 9.36 0 0 1-1.569 5.192l2.397 2.397a1.89 1.89 0 0 1 0 2.671 1.89 1.89 0 0 1-2.671 0l-2.397-2.397a9.36 9.36 0 0 1-5.192 1.569c-5.187 0-9.433-4.246-9.433-9.433z"
+                fill="#fff"
+                fill-opacity=".05"
+              ></path>
+              <g fill="#fff">
+                <path
+                  d="M17.394 10.153c-3.723 0-6.741 3.018-6.741 6.741s3.018 6.741 6.741 6.741 6.741-3.018 6.741-6.741-3.018-6.741-6.741-6.741zM7.347 16.894A10.05 10.05 0 0 1 17.394 6.847 10.05 10.05 0 0 1 27.44 16.894 10.05 10.05 0 0 1 17.394 26.94 10.05 10.05 0 0 1 7.347 16.894z"
+                ></path>
+                <path
+                  d="M23.025 22.525c.645-.645 1.692-.645 2.337 0l3.188 3.188c.645.645.645 1.692 0 2.337s-1.692.645-2.337 0l-3.187-3.187c-.645-.646-.645-1.692 0-2.337z"
+                ></path>
+              </g>
+            </g>
+            <path
+              d="M23.662 14.663c2.112 0 3.825-1.713 3.825-3.825s-1.713-3.825-3.825-3.825-3.825 1.713-3.825 3.825 1.713 3.825 3.825 3.825z"
+              fill="#fff"
+            ></path>
+            <path
+              fill-rule="evenodd"
+              d="M23.663 8.429a2.41 2.41 0 0 0-2.408 2.408 2.41 2.41 0 0 0 2.408 2.408 2.41 2.41 0 0 0 2.408-2.408 2.41 2.41 0 0 0-2.408-2.408zm-5.242 2.408c0-2.895 2.347-5.242 5.242-5.242s5.242 2.347 5.242 5.242-2.347 5.242-5.242 5.242-5.242-2.347-5.242-5.242z"
+              fill="#d85151"
+            ></path>
+          </svg>
+          <h3>Finder</h3>
+        </a>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="nav-links-container">
+        <ul class="nav-list">
+          <li class="nav-list-item">
+            <button class="acButt" data-group="home">Home</button>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#" data-parent="home"
+                  >Real state <span>Property listings directory</span></a
+                >
+              </li>
+              <li>
+                <a href="#" data-parent="home"
+                  >Cars <span>Vehicle sales listing</span></a
+                >
+              </li>
+              <li>
+                <a href="#" data-parent="home"
+                  >Contractors <span>Professional services directory</span></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-list-item">
+            <button class="acButt" data-group="listings">Listings</button>
+            <ul class="dropdown-menu">
+              <li><a href="#" data-parent="listings">Cars</a></li>
+              <li><a href="#" data-parent="listings">Real Estate</a></li>
+            </ul>
+          </li>
+          <li class="nav-list-item">
+            <button class="acButt" data-group="account">Account</button>
+          </li>
+          <li class="nav-list-item">
+            <button class="acButt" data-group="pages">Pages</button>
+          </li>
+          <li class="nav-list-item">
+            <button class="acButt" data-group="docs">Documents</button>
+          </li>
+          <li class="nav-list-item">
+            <button class="acButt" data-group="components">Components</button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Icons and Action Button -->
+      <div class="nav-icons">
+        <div id="theme-switch">
+          <i class="fa-regular fa-moon toggleMode"></i>
+          <i class="fa-regular fa-sun toggleMode"></i>
+        </div>
+        <i class="fa-regular fa-user"></i>
+        <button class="nav-butt1">
+          <i class="fa-solid fa-plus"></i>Join Pro Network
+        </button>
+        <button class="nav-butt2"><i class="fa-solid fa-plus"></i>Join</button>
+      </div>
+    </nav>
+
+    <!-- end of nav -->
+
+    <!-- start of  sectin 1 "landing page" -->
+
+    <header class="py-5 text-center text-white">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="">
+            Explore top-rated<br />
+            certified pros nearby
+          </h1>
+
+          <!-- Form header  -->
+          <form
+            action=""
+            class="d-flex flex-column flex-sm-row justify-content-center position-relative"
+          >
+            <input
+              type="text "
+              class="input1"
+              placeholder="what service do you need?"
+            />
+            <i
+              class="fa-brands fa-searchengin searchIcon"
+              style="color: #202020"
+            ></i>
+            <hr class="vr d-none d-sm-block" />
+            <input type="text" class="input2" placeholder="Zip code" />
+            <i
+              class="fa-solid fa-location-dot locationIcon"
+              style="color: #202020"
+            ></i>
+            <button class="position-absolute">search</button>
+          </form>
+          <div class="buttoms mt-4 d-flex justify-content-center gap-3">
+            <button class="btn btn-outline-light rounded-pill">
+              Handyperson
+            </button>
+            <button class="btn btn-outline-light rounded-pill">
+              Electrician
+            </button>
+            <button class="btn btn-outline-light rounded-pill">Plumbing</button>
+            <button class="btn btn-outline-light rounded-pill">
+              Landscaping
+            </button>
+            <button class="btn btn-outline-light rounded-pill">Roofing</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end of   sectin 1 "landing page" -->
+
+    <!-- start of  sectin 2  -->
+
+    <section id="browsprosSection">
+      <div class="container p-5 m-auto">
+        <div class="titleofsec">
+          <h2>Browse pros in your area</h2>
+          <a href="">View all <i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+        <div class="browses">
+          <div>
+            <img src="../imgs/download (11).svg" alt="" />
+            <a href="#" class="text-decoration-none text-secondary h6 ps-3"
+              >flooring</a
+            >
+          </div>
+
+          <div>
+            <img src="../imgs/download (1).svg" alt="" />
+            <a href="#" class="text-decoration-none text-secondary h6 ps-3"
+              >concerte</a
+            >
+          </div>
+
+          <div>
+            <img src="../imgs/download (2).svg" alt="" />
+            <a href="#" class="text-decoration-none text-secondary h6 ps-3"
+              >Roofing</a
+            >
+          </div>
+
+          <div>
+            <img src="../imgs/download (3).svg" alt="" />
+            <a href="#" class="text-decoration-none text-secondary h6 ps-3"
+              >electrician</a
+            >
+          </div>
+
+          <div>
+            <img src="../imgs/download (4).svg" alt="" />
+            <a href="#" class="text-decoration-none text-secondary h6 ps-3"
+              >heating</a
+            >
+          </div>
+
+          <div>
+            <img src="../imgs/download (11).svg" alt="" />
+            <a href="#" class="text-decoration-none text-secondary h6 ps-3"
+              >pest cont
+            </a>
+          </div>
+
+          <div>
+            <img src="../imgs/download (5).svg" alt="" />
+            <a href="#" class="text-decoration-none text-secondary h6 ps-3"
+              >flooring</a
+            >
+          </div>
+
+          <div>
+            <img src="../imgs/download (6).svg" alt="" />
+            <a href="#" class="text-decoration-none text-secondary h6 ps-3"
+              >flooring</a
+            >
+          </div>
+
+          <div>
+            <img src="../imgs/download (7).svg" alt="" />
+            <a href="#" class="text-decoration-none text-secondary h6 ps-3"
+              >flooring</a
+            >
+          </div>
+
+          <div>
+            <img src="../imgs/download (8).svg" alt="" />
+            <a href="#" class="text-decoration-none text-secondary h6 ps-3"
+              >flooring</a
+            >
+          </div>
+
+          <div>
+            <img src="../imgs/download (9).svg" alt="" />
+            <a href="#" class="text-decoration-none text-secondary h6 ps-3"
+              >flooring</a
+            >
+          </div>
+
+          <div>
+            <img src="../imgs/download (10).svg" alt="" />
+            <a href="#" class="text-decoration-none text-secondary h6 ps-3"
+              >flooring</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of  sectin 2  -->
+
+    <!-- start of  sectin 3  -->
+
+    <section id="Popularprojects">
+      <div class="container">
+        <div class="leftSide">
+          <div class="leftSideText d-flex align-items-center flex-column">
+            <h3 class="fs-4 me-3 ms-3 text-center w-75 mt-4">
+              Get matched with local pros
+            </h3>
+            <p class="text-secondary">for your next home project</p>
+          </div>
+          <div class="imghome">
+            <img src="../imgs/imgi_14_banner.png" alt="" />
+          </div>
+        </div>
+        <div class="rightSide">
+          <div class="titleofsec">
+            <h2>popular projects near you</h2>
+            <a href="">View all <i class="fa-solid fa-chevron-right"></i></a>
+          </div>
+          <div class="rightSideContent">
+            <div class="projectImgContainer">
+              <img src="../imgs/imgi_15_th01.jpg" alt="" />
+            </div>
+            <div class="d-flex flex-column p-3">
+              <h3>Descks & proches</h3>
+              <div class="info">
+                <i class="fa-solid fa-star" style="color: #ffcb3b"></i>
+                <p>4.7</p>
+                <span>(75)</span>
+              </div>
+              <span class="fw-semibold projectPrice">From $1258</span>
+            </div>
+          </div>
+          <div class="rightSideContent">
+            <div class="overflow-hidden projectImgContainer">
+              <img src="../imgs/imgi_17_th03.jpg" alt="" />
+            </div>
+            <div class="d-flex flex-column p-3">
+              <h3>Descks & proches</h3>
+              <div class="info">
+                <i class="fa-solid fa-star" style="color: #ffcb3b"></i>
+                <p>4.7</p>
+                <span>(75)</span>
+              </div>
+              <span class="fw-semibold projectPrice">From $1258</span>
+            </div>
+          </div>
+          <div class="rightSideContent">
+            <div class="overflow-hidden projectImgContainer">
+              <img src="../imgs/imgi_18_th04.jpg" alt="" />
+            </div>
+            <div class="d-flex flex-column p-3">
+              <h3>Descks & proches</h3>
+              <div class="info">
+                <i class="fa-solid fa-star" style="color: #ffcb3b"></i>
+                <p>4.7</p>
+                <span>(75)</span>
+              </div>
+              <span class="fw-semibold projectPrice">From $1258</span>
+            </div>
+          </div>
+          <div class="rightSideContent">
+            <div class="overflow-hidden projectImgContainer">
+              <img src="../imgs/imgi_19_th05.jpg" alt="" />
+            </div>
+            <div class="d-flex flex-column p-3">
+              <h3>Descks & proches</h3>
+              <div class="info">
+                <i class="fa-solid fa-star" style="color: #ffcb3b"></i>
+                <p>4.7</p>
+                <span>(75)</span>
+              </div>
+              <span class="fw-semibold projectPrice">From $1258</span>
+            </div>
+          </div>
+          <div class="rightSideContent">
+            <div class="overflow-hidden projectImgContainer">
+              <img src="../imgs/imgi_31_05.jpg" alt="" />
+            </div>
+            <div class="d-flex flex-column p-3">
+              <h3>Descks & proches</h3>
+              <div class="info">
+                <i class="fa-solid fa-star" style="color: #ffcb3b"></i>
+                <p>4.7</p>
+                <span>(75)</span>
+              </div>
+              <span class="fw-semibold projectPrice">From $1258</span>
+            </div>
+          </div>
+          <div class="rightSideContent">
+            <div class="overflow-hidden projectImgContainer">
+              <img src="../imgs/imgi_32_06.jpg" alt="" />
+            </div>
+            <div class="d-flex flex-column p-3">
+              <h3>Descks & proches</h3>
+              <div class="info">
+                <i class="fa-solid fa-star" style="color: #ffcb3b"></i>
+                <p>4.7</p>
+                <span>(75)</span>
+              </div>
+              <span class="fw-semibold projectPrice">From $1258</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of  sectin 3  -->
+
+    <!-- start of sectin 4  -->
+
+    <section id="homeProjectsSection">
+      <div class="container">
+        <div class="titleofsec">
+          <h2>Popular home projects</h2>
+          <a href="">View all <i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+        <div class="Noswiper">
+          <div class="homeProjects">
+            <div class="homeProjCard">
+              <div class="cardimg">
+                <img src="../imgs/imgi_19_th05.jpg" alt="" />
+                <div class="overlay"></div>
+
+                <p>One-time cleaning service</p>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="cardBody">
+                <div class="cardInfo">
+                  <i class="fa-solid fa-star" style="color: #fac32a"></i>
+                  <p>4.9</p>
+                  <span>(256)</span>
+                  <span class="fw-semibold projectPrice">From $80</span>
+                </div>
+                <div class="cardButton"><button>Book Now</button></div>
+              </div>
+            </div>
+            <div class="homeProjCard">
+              <div class="cardimg">
+                <img src="../imgs/imgi_22_02.jpg" alt="" />
+                <div class="overlay"></div>
+
+                <p>One-time cleaning service</p>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="cardBody">
+                <div class="cardInfo">
+                  <i class="fa-solid fa-star" style="color: #fac32a"></i>
+                  <p>4.9</p>
+                  <span>(256)</span>
+                  <span class="fw-semibold projectPrice">From $80</span>
+                </div>
+                <div class="cardButton"><button>Book Now</button></div>
+              </div>
+            </div>
+            <div class="homeProjCard">
+              <div class="cardimg">
+                <img src="../imgs/imgi_32_06.jpg" alt="" />
+                <div class="overlay"></div>
+
+                <p>One-time cleaning service</p>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="cardBody">
+                <div class="cardInfo">
+                  <i class="fa-solid fa-star" style="color: #fac32a"></i>
+                  <p>4.9</p>
+                  <span>(256)</span>
+                  <span class="fw-semibold projectPrice">From $80</span>
+                </div>
+                <div class="cardButton"><button>Book Now</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper home-projects-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="homeProjCard">
+                <div class="cardimg">
+                  <img src="../imgs/imgi_19_th05.jpg" alt="" />
+                  <i class="fa-solid fa-star" style="color: #fac32a"></i>
+                  <p>4.9</p>
+                  <span>(256)</span>
+                  <span class="fw-semibold projectPrice">From $80</span>
+                </div>
+                <div class="cardBody">
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="homeProjCard">
+                <div class="cardimg">
+                  <img src="../imgs/imgi_22_02.jpg" alt="" />
+                  <i class="fa-solid fa-star" style="color: #fac32a"></i>
+                  <p>4.9</p>
+                  <span>(256)</span>
+                  <span class="fw-semibold projectPrice">From $80</span>
+                </div>
+                <div class="cardBody">
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="homeProjCard">
+                <div class="cardimg">
+                  <img src="../imgs/imgi_32_06.jpg" alt="" />
+                  <i class="fa-solid fa-star" style="color: #fac32a"></i>
+                  <p>4.9</p>
+                  <span>(256)</span>
+                  <span class="fw-semibold projectPrice">From $80</span>
+                </div>
+                <div class="cardBody">
+                  <!-- محتوى الكارت كما هو -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- end of  sectin 4  -->
+    <!-- start of sec 5 -->
+    <section id="ExpertAdviceSection">
+      <div class="container">
+        <div class="titleofsec">
+          <h2>Expert advice</h2>
+          <a href="">View all <i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+        <div class="adviceCards">
+          <div class="adviceCard">
+            <div class="adviceImg">
+              <img src="../imgs/imgi_24_01.jpg" alt="" />
+            </div>
+            <div class="adviceCardBody">
+              <span class="badge">Cleaning</span>
+              <h3>Expert advice from masters of cleanliness</h3>
+              <p>
+                Unlock the secrets to a spotless home with tips from cleaning
+                professionals. From tackling stubborn...
+              </p>
+              <h4>Oct 19, 2024</h4>
+            </div>
+          </div>
+          <div class="adviceCard">
+            <div class="adviceImg">
+              <img src="../imgs/imgi_25_02.jpg" alt="" />
+            </div>
+            <div class="adviceCardBody">
+              <span class="badge">Cleaning</span>
+              <h3>Expert advice from masters of cleanliness</h3>
+              <p>
+                Unlock the secrets to a spotless home with tips from cleaning
+                professionals. From tackling stubborn...
+              </p>
+              <h4>Oct 19, 2024</h4>
+            </div>
+          </div>
+          <div class="adviceCard">
+            <div class="adviceImg">
+              <img src="../imgs/imgi_26_03.jpg" alt="" />
+            </div>
+            <div class="adviceCardBody">
+              <span class="badge">Cleaning</span>
+              <h3>Expert advice from masters of cleanliness</h3>
+              <p>
+                Unlock the secrets to a spotless home with tips from cleaning
+                professionals. From tackling stubborn...
+              </p>
+              <h4>Oct 19, 2024</h4>
+            </div>
+          </div>
+          <div class="adviceCard">
+            <div class="adviceImg">
+              <img src="../imgs/imgi_27_04.jpg" alt="" />
+            </div>
+            <div class="adviceCardBody">
+              <span class="badge">Cleaning</span>
+              <h3>Expert advice from masters of cleanliness</h3>
+              <p>
+                Unlock the secrets to a spotless home with tips from cleaning
+                professionals. From tackling stubborn...
+              </p>
+              <h4>Oct 19, 2024</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end of sec 5 -->
+
+    <!-- start of sec 6 -->
+    <section id="howitworks">
+      <div class="container">
+        <div class="title">
+          <h2>How it works</h2>
+          <p>
+            Effortlessly find, connect, and hire the perfect contractor for your
+            job - all in just three easy steps.
+          </p>
+        </div>
+        <div class="infocards">
+          <div class="info">
+            <svg
+              class="text-secondary-emphasis"
+              xmlns="http://www.w3.org/2000/svg"
+              width="48"
+              height="48"
+              fill="currentColor"
+            >
+              <path
+                d="M41.441 35.281a.95.95 0 0 1-.184-.018.99.99 0 0 1-.175-.054.93.93 0 0 1-.162-.086.91.91 0 0 1-.142-.116c-.043-.043-.082-.091-.117-.142s-.063-.105-.085-.162-.042-.116-.053-.175a.95.95 0 0 1-.019-.184.93.93 0 0 1 .019-.183.88.88 0 0 1 .053-.175c.023-.057.052-.112.085-.162a.93.93 0 0 1 .117-.142c.174-.174.416-.275.663-.275a.94.94 0 0 1 .663.275c.043.043.082.091.116.142a.97.97 0 0 1 .087.162c.024.057.041.115.053.175a.93.93 0 0 1 .019.183.95.95 0 0 1-.019.184c-.012.059-.03.118-.053.175a.94.94 0 0 1-.087.162c-.034.052-.073.099-.116.142s-.091.082-.143.116a.86.86 0 0 1-.162.086.95.95 0 0 1-.175.054.93.93 0 0 1-.183.018zM27.48 37.367c-9.238 0-16.753-7.515-16.753-16.752S18.242 3.862 27.48 3.862s16.754 7.515 16.754 16.752-7.516 16.753-16.754 16.753zm0-31.63c-8.204 0-14.878 6.674-14.878 14.877A14.9 14.9 0 0 0 27.48 35.492a14.9 14.9 0 0 0 14.879-14.878A14.9 14.9 0 0 0 27.48 5.737zm-3.993 17.638a.94.94 0 0 1-.925-.79.94.94 0 0 1 .617-1.033c.162-.489.689-.756 1.18-.596l1.025.334a.94.94 0 0 1 .644.965c-.034.432-.359.784-.787.852l-1.605.256a.94.94 0 0 1-.149.012zm8.37 0a.94.94 0 0 1-.149-.012l-1.605-.256a.94.94 0 0 1-.143-1.817l1.025-.334a.94.94 0 0 1 1.18.596.94.94 0 0 1 .617 1.033.94.94 0 0 1-.925.79zM41.989 6.104A20.38 20.38 0 0 0 27.478.094a20.39 20.39 0 0 0-14.511 6.01 20.38 20.38 0 0 0-6.011 14.51 20.37 20.37 0 0 0 5.363 13.833l-1.308 1.308-1.546-1.546a.94.94 0 0 0-1.326 0l-6.95 6.95C.423 41.925 0 42.945 0 44.03s.423 2.105 1.189 2.871a4.05 4.05 0 0 0 2.872 1.188 4.05 4.05 0 0 0 2.872-1.188l6.95-6.949c.176-.176.275-.414.275-.663s-.099-.487-.275-.663l-1.546-1.546 1.308-1.308c3.018 2.76 6.728 4.53 10.788 5.136 1.029.154 2.057.23 3.08.23a20.38 20.38 0 0 0 9.325-2.256.94.94 0 0 0 .407-1.262.94.94 0 0 0-1.262-.407c-7.226 3.703-15.941 2.332-21.688-3.414a18.52 18.52 0 0 1-5.463-13.186A18.52 18.52 0 0 1 14.293 7.43c7.271-7.27 19.101-7.27 26.371 0 5.964 5.963 7.184 15.221 2.966 22.512a.94.94 0 0 0 .342 1.281.94.94 0 0 0 1.281-.342c4.643-8.025 3.3-18.214-3.263-24.777zM11.895 39.289l-6.287 6.287a2.19 2.19 0 0 1-3.092 0 2.17 2.17 0 0 1 0-3.092l6.287-6.287.883.883-2.639 2.639a.94.94 0 0 0 0 1.326c.183.183.423.275.663.275s.48-.092.663-.275l2.639-2.639.883.883zm23.459-13.825v-2.415c.184-.75 1.136-4.809 1.137-8.386 0-1.47-.33-2.859-.607-3.765l-.418-1.188c-.201-.5-.284-.707-.579-.879a.94.94 0 0 0-1.058.078l-.241.193a6.23 6.23 0 0 1-5.206 1.234c-2.622-.557-5.338.498-6.898 2.64-.835.124-1.604.543-2.164 1.192a3.55 3.55 0 0 0-.824 2.839 1.01 1.01 0 0 0 .024.114l1.46 5.258v3.086c0 1.853.942 3.422 2.725 4.535.703.439 1.511.796 2.408 1.063l-.022 1.583a.94.94 0 0 0 .938.95h3.273a.94.94 0 0 0 .938-.95l-.022-1.581c.9-.266 1.709-.622 2.413-1.061 1.779-1.111 2.72-2.68 2.72-4.539zm-6.222 3.95l-.103.025a.94.94 0 0 0-.693.918l.018 1.363h-1.372l.019-1.363a.94.94 0 0 0-.693-.918l-.097-.024c-1.309-.314-4.352-1.325-4.352-3.952v-6.082c0-.19.155-.345.345-.345h3.445a8.71 8.71 0 0 0 6.002-2.385.94.94 0 0 0 .038-1.325.94.94 0 0 0-1.325-.038c-1.28 1.208-2.955 1.873-4.715 1.873h-3.444c-.601 0-1.148.241-1.548.63l-.309-1.111a1.67 1.67 0 0 1 .395-1.288c.319-.369.781-.58 1.268-.58a.94.94 0 0 0 .799-.447l.015-.024c1.09-1.724 3.168-2.596 5.169-2.171a8.09 8.09 0 0 0 5.992-1.054c.291.869.63 2.176.63 3.547l-.103 2.099a.95.95 0 0 0-.148-.01.94.94 0 0 0-.93.945l.043 5.239v2.528c0 2.636-3.04 3.641-4.347 3.95zm-1.461-1.163a2.41 2.41 0 0 1-2.201-1.433.94.94 0 0 1 .479-1.237.94.94 0 0 1 1.236.478.53.53 0 0 0 .971 0c.209-.474.763-.688 1.236-.478a.94.94 0 0 1 .479 1.237 2.41 2.41 0 0 1-2.201 1.433z"
+              ></path>
+            </svg>
+            <h3>EXPLORE</h3>
+            <p>Browse through our curated list of contractors.</p>
+          </div>
+          <div class="info">
+            <svg
+              class="text-secondary-emphasis"
+              xmlns="http://www.w3.org/2000/svg"
+              width="48"
+              height="48"
+              fill="currentColor"
+            >
+              <path
+                d="M43.313 0H18.938c-2.585 0-4.687 2.103-4.687 4.688v8.438H4.688C2.103 13.125 0 15.228 0 17.813v19.875c0 2.585 2.103 4.688 4.688 4.688h1.875v4.688a.94.94 0 0 0 .938.937.94.94 0 0 0 .663-.275l5.35-5.35h15.549c2.585 0 4.688-2.103 4.688-4.687V29.25h1.875v4.688a.94.94 0 0 0 .938.937.94.94 0 0 0 .663-.275l5.35-5.35h1.487c2.392 0 3.938-1.84 3.938-4.687V4.688A4.7 4.7 0 0 0 43.313 0zM31.875 37.688c0 1.551-1.262 2.813-2.812 2.813H13.125a.94.94 0 0 0-.663.275l-4.025 4.025v-3.362A.94.94 0 0 0 7.5 40.5H4.688c-1.551 0-2.812-1.262-2.812-2.812V17.813C1.875 16.262 3.137 15 4.688 15h24.375c1.551 0 2.813 1.262 2.813 2.813v19.875zm14.25-13.125c0 1.05-.268 2.813-2.062 2.813h-1.875a.94.94 0 0 0-.663.275L37.5 31.674v-3.362a.94.94 0 0 0-.937-.937H33.75v-6.75h5.813a.94.94 0 0 0 .938-.937.94.94 0 0 0-.937-.937H33.75v-.937c0-2.585-2.103-4.687-4.687-4.687H16.125V4.688c0-1.551 1.262-2.812 2.813-2.812h24.375c1.551 0 2.813 1.262 2.813 2.813v19.875zM39.563 7.5H22.688a.94.94 0 0 0-.937.938.94.94 0 0 0 .938.938h16.875a.94.94 0 0 0 .938-.937.94.94 0 0 0-.937-.937zm0 5.625h-3.75a.94.94 0 0 0-.937.938.94.94 0 0 0 .938.938h3.75a.94.94 0 0 0 .938-.937.94.94 0 0 0-.937-.937zM8.438 22.5a.94.94 0 0 0 .938-.937.94.94 0 0 0-.937-.937.94.94 0 0 0-.937.938.94.94 0 0 0 .938.938zm16.875-1.875H12.188a.94.94 0 0 0-.937.938.94.94 0 0 0 .938.938h13.125a.94.94 0 0 0 .938-.937.94.94 0 0 0-.937-.937zm0 5.625h-9.375a.94.94 0 0 0-.937.938.94.94 0 0 0 .938.938h9.375a.94.94 0 0 0 .938-.937.94.94 0 0 0-.937-.937zM8.438 28.125h3.75a.94.94 0 0 0 .938-.937.94.94 0 0 0-.937-.937h-3.75a.94.94 0 0 0-.937.938.94.94 0 0 0 .938.938zm9.375 3.75H8.625a.94.94 0 0 0-.937.938.94.94 0 0 0 .938.938h9.188a.94.94 0 0 0 .938-.937.94.94 0 0 0-.937-.937z"
+              ></path>
+            </svg>
+            <h3>EXPLORE</h3>
+            <p>Browse through our curated list of contractors.</p>
+          </div>
+          <div class="info">
+            <svg
+              class="text-secondary-emphasis"
+              xmlns="http://www.w3.org/2000/svg"
+              width="48"
+              height="48"
+              fill="currentColor"
+            >
+              <path
+                d="M4.519 8.136c.196.471.752.703 1.224.507s.703-.752.507-1.224-.752-.703-1.224-.507-.704.753-.507 1.224zm3.875 0c.153.368.535.607.935.576.391-.03.729-.307.834-.685.222-.798-.673-1.478-1.384-1.054-.393.234-.56.74-.384 1.163zM4.752 44.84h35.053A8.21 8.21 0 0 0 48 36.645a8.21 8.21 0 0 0-7.257-8.141l-.001-20.593A4.76 4.76 0 0 0 35.99 3.16H4.752A4.76 4.76 0 0 0 0 7.912v32.175a4.76 4.76 0 0 0 4.752 4.753zm0-1.875a2.88 2.88 0 0 1-2.877-2.878V12.202h36.993v16.302a8.28 8.28 0 0 0-6.536 4.779H5.76a.94.94 0 0 0-.937.938v4.766a.94.94 0 0 0 .938.938h9.613a.94.94 0 0 0 .938-.937.94.94 0 0 0-.937-.937H6.698V35.16h25.048a8.24 8.24 0 0 0-.135 1.487c0 .47.04.941.12 1.405h-8.109a.94.94 0 0 0-.937.938.94.94 0 0 0 .938.938h8.675a8.28 8.28 0 0 0 2.298 3.04H4.752zm41.373-6.32a6.33 6.33 0 0 1-6.32 6.32 6.39 6.39 0 0 1-6.32-6.32 6.31 6.31 0 0 1 .132-1.285c.595-2.871 3.144-5.035 6.188-5.035a6.33 6.33 0 0 1 6.32 6.319zM4.752 5.035H35.99a2.88 2.88 0 0 1 2.877 2.877v2.415H1.875V7.912a2.88 2.88 0 0 1 2.877-2.877zm2.879 23.769a8.43 8.43 0 0 0 5.579 2.124 8.43 8.43 0 0 0 5.58-2.125 8.4 8.4 0 0 0-5.579-14.654 8.4 8.4 0 0 0-5.579 14.655zm5.293.242a6.54 6.54 0 0 1-3.678-1.339 4.04 4.04 0 0 1 3.954-3.3c1.973.004 3.628 1.419 3.972 3.3-1.208.927-2.728 1.407-4.249 1.34zm-1.021-7.821a1.31 1.31 0 0 1 1.307-1.307 1.31 1.31 0 0 1 1.307 1.307 1.31 1.31 0 0 1-1.301 1.307 1.31 1.31 0 0 1-1.312-1.307zm1.307-5.201c3.593 0 6.515 2.922 6.515 6.514 0 1.287-.383 2.534-1.08 3.589-.563-1.321-1.596-2.39-2.879-3.01.393-.529.626-1.184.626-1.893 0-1.755-1.428-3.182-3.182-3.182s-3.182 1.427-3.182 3.182c0 .708.233 1.363.626 1.892-1.283.62-2.315 1.69-2.878 3.011a6.52 6.52 0 0 1-1.08-3.589c0-3.592 2.922-6.514 6.514-6.514zm25.504 21.598l-1.285-1.285a.94.94 0 0 0-1.326 0 .94.94 0 0 0 0 1.326l1.948 1.948a.94.94 0 0 0 1.326 0l4.368-4.367a.94.94 0 0 0 0-1.326.94.94 0 0 0-1.326 0l-3.704 3.705z"
+              ></path>
+            </svg>
+            <h3>EXPLORE</h3>
+            <p>Browse through our curated list of contractors.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of sec 6 -->
+
+    <!-- sec 7  -->
+    <section class="become-pro">
+      <div class="content">
+        <div class="text">
+          <h2>
+            Grow your business with us.<br />
+            <strong>Become a Pro today</strong>
+          </h2>
+          <div class="buttons">
+            <button class="btn add">
+              <span class="plus">+</span> Add business
+            </button>
+            <button class="btn learn">
+              Learn more <span class="arrow">&rarr;</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="visual">
+          <div class="image-wrapper">
+            <img src="/imgs/become-pro-cta.jpg" alt="Crafting Woman" />
+
+            <div class="rotating-text">
+              <div class="white-ring"></div>
+              <div class="inner-white-ring"></div>
+              <svg viewBox="0 0 200 200" class="circle-text">
+                <defs>
+                  <path
+                    id="circlePath"
+                    d="M100,100 m-75,0 a75,75 0 1,1 150,0 a75,75 0 1,1 -150,0"
+                  />
+                </defs>
+                <text fill="white">
+                  <textPath xlink:href="#circlePath">
+                    Feature your business Feature your customers Feature your
+                    business Feature your customers
+                  </textPath>
+                </text>
+              </svg>
+              <div class="dot"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- sec 7  -->
+
+    <!-- start of sec 8 -->
+    <section id="getfinderapp">
+      <h2>Get Finder App</h2>
+      <p>Explore top-rated certified pros</p>
+      <div class="btns">
+        <a href="#!" aria-label="Download on App Store">
+          <i class="fa-brands fa-apple"></i>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="77"
+            height="24"
+            viewBox="0 0 77 24"
+            fill="currentColor"
+          >
+            <path
+              d="M40.713 15.797c.701-.624 1.055-1.431 1.055-2.427 0-.806-.242-1.486-.733-2.032-.483-.546-1.232-1.02-2.255-1.423-.838-.324-1.418-.625-1.732-.901a1.41 1.41 0 0 1-.548-1.138 1.39 1.39 0 0 1 .475-1.059c.379-.316.91-.482 1.579-.482.854 0 1.611.182 2.288.538l.483-1.518c-.717-.372-1.619-.553-2.699-.553-1.216 0-2.191.308-2.924.917a2.94 2.94 0 0 0-1.103 2.356c0 1.463 1.039 2.577 3.142 3.344.765.277 1.313.577 1.643.901a1.63 1.63 0 0 1 .491 1.194c0 .53-.201.957-.604 1.273-.395.316-.959.474-1.675.474-.999 0-1.917-.245-2.755-.727l-.443 1.557c.773.482 1.796.727 3.077.727 1.386 0 2.465-.34 3.238-1.02zm-31.706.846h2.03L7.195 4.966H4.826L1 16.644h1.974l1.055-3.431h3.867l1.112 3.431zM6.558 8.729l1.007 3.044H4.367l.991-3.044.564-2.198h.04l.596 2.198zm13.122 6.997c.797-.83 1.192-1.961 1.192-3.392 0-1.289-.338-2.316-1.031-3.107-.677-.783-1.514-1.178-2.529-1.178-1.289 0-2.255.506-2.892 1.51h-.032l-.105-1.336h-1.675l.072 2.767v9.068h1.909v-4.42c.499.798 1.313 1.194 2.449 1.194 1.047 0 1.933-.364 2.642-1.107zm-1.313-5.353c.379.53.564 1.202.564 2.024 0 .893-.201 1.605-.604 2.15-.403.538-.959.814-1.675.814-.612 0-1.112-.213-1.49-.633s-.572-.941-.572-1.55v-1.407c0-.15.032-.34.089-.569a2.11 2.11 0 0 1 .749-1.202c.387-.3.814-.459 1.281-.459a1.96 1.96 0 0 1 1.659.83zm12.366 1.961c0 1.431-.395 2.562-1.192 3.392-.709.743-1.595 1.107-2.642 1.107-1.136 0-1.949-.395-2.449-1.194v4.42H22.54v-9.068l-.072-2.767h1.675l.105 1.336h.032c.636-1.004 1.603-1.51 2.892-1.51 1.015 0 1.853.395 2.529 1.178.693.791 1.031 1.818 1.031 3.107zm-1.941.063c0-.822-.185-1.494-.564-2.024a1.96 1.96 0 0 0-1.659-.83c-.467 0-.894.158-1.281.459-.379.308-.628.704-.749 1.202-.056.229-.089.419-.089.569v1.407c0 .609.193 1.131.572 1.55s.878.633 1.49.633c.717 0 1.281-.277 1.676-.814.411-.546.604-1.257.604-2.15zM48.083 9.63h-2.102v4.087c0 1.036.37 1.557 1.112 1.557.338 0 .62-.032.846-.087l.056 1.423c-.379.134-.87.206-1.482.206-.757 0-1.337-.229-1.764-.68s-.636-1.21-.636-2.269V9.623h-1.248V8.223h1.249V6.681l1.869-.553v2.095h2.102V9.63zm8.329 5.922c.749-.83 1.128-1.89 1.128-3.186 0-1.257-.362-2.285-1.096-3.075-.765-.822-1.78-1.233-3.037-1.233-1.305 0-2.344.419-3.117 1.249-.765.83-1.152 1.897-1.152 3.202 0 1.249.37 2.285 1.12 3.099s1.756 1.225 3.013 1.225c1.305 0 2.352-.427 3.142-1.281zm-1.353-5.131c.338.553.508 1.21.508 1.984s-.177 1.439-.524 2.008c-.419.68-.991 1.02-1.716 1.02-.741 0-1.321-.332-1.732-1.004-.338-.546-.508-1.21-.508-1.984 0-.799.161-1.471.508-2.024.395-.672.983-1.004 1.748-1.004.741 0 1.313.332 1.716 1.004zm8.683-.553c-.185-.032-.387-.047-.604-.047-.669 0-1.192.245-1.555.743-.314.435-.475.996-.475 1.66v4.419h-1.909v-5.771l-.056-2.649h1.659l.072 1.613h.056c.201-.553.516-1.004.951-1.336.427-.3.886-.451 1.377-.451a4.09 4.09 0 0 1 .475.032l.008 1.787zm8.451 3.012c.048-.229.072-.514.072-.846 0-1.051-.258-1.929-.765-2.656-.628-.901-1.571-1.352-2.803-1.352-1.257 0-2.255.451-2.997 1.352-.709.846-1.063 1.905-1.063 3.17 0 1.289.379 2.324 1.136 3.091s1.804 1.154 3.133 1.154c1.104 0 2.062-.174 2.876-.522l-.298-1.297c-.693.261-1.466.395-2.312.395-.765 0-1.386-.198-1.869-.585-.532-.435-.806-1.075-.83-1.905h5.719zm-2.119-2.767c.258.403.387.886.371 1.439l-3.963-.008c.056-.561.25-1.051.564-1.455a1.82 1.82 0 0 1 1.514-.759c.677 0 1.184.261 1.514.783z"
+            ></path>
+          </svg>
+        </a>
+        <a href="#!" aria-label="Download on Google Play">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M19.665 10.561l-3.251-1.878-3.329 3.329 3.328 3.329 3.263-1.884c.509-.309.812-.849.812-1.444s-.304-1.135-.823-1.451z"
+              fill="#ffce00"
+            ></path>
+            <path
+              d="M13.085 12.011L4.018 2.879a1.71 1.71 0 0 0-.507 1.216v15.804a1.71 1.71 0 0 0 .507 1.217l9.067-9.105z"
+              fill="#01daff"
+            ></path>
+            <path
+              d="M13.086 12.011l3.329-3.329.005-.005-4.46-2.568L6.08 2.654c-.529-.327-1.171-.338-1.712-.034a2.54 2.54 0 0 0-.349.259l9.067 9.132z"
+              fill="#00f076"
+            ></path>
+            <path
+              d="M4.019 21.116c.113.101.225.18.349.259.27.146.552.225.834.225.304 0 .597-.09.867-.248l5.891-3.439 4.46-2.568-.005-.005-3.329-3.329-9.067 9.104z"
+              fill="#f63448"
+            ></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="77"
+            height="24"
+            viewBox="0 0 77 24"
+            fill="white"
+          >
+            <path
+              d="M24.575 9.45c-2.184 0-3.914 1.704-3.914 4.071 0 2.272 1.729 4.071 3.914 4.071s3.914-1.704 3.914-4.071c0-2.461-1.729-4.071-3.914-4.071zm0 6.438c-1.183 0-2.184-1.041-2.184-2.462s1.001-2.462 2.184-2.462 2.184.947 2.184 2.462c0 1.42-1.001 2.462-2.184 2.462zM16.11 9.45c-2.184 0-3.914 1.704-3.914 4.071 0 2.272 1.729 4.071 3.914 4.071s3.914-1.704 3.914-4.071c0-2.461-1.729-4.071-3.914-4.071zm0 6.438c-1.183 0-2.184-1.041-2.184-2.462s1.001-2.462 2.184-2.462 2.184.947 2.184 2.462c0 1.42-1.001 2.462-2.184 2.462zM6.007 10.681v1.704h3.914c-.091.947-.455 1.704-.91 2.177-.546.568-1.456 1.231-3.004 1.231-2.457 0-4.278-1.988-4.278-4.544s1.911-4.544 4.278-4.544c1.274 0 2.275.568 3.004 1.231l1.183-1.231C9.193 5.757 7.918 5 6.098 5 2.822 5 0 7.84 0 11.249s2.822 6.249 6.098 6.249c1.82 0 3.095-.568 4.187-1.799 1.092-1.136 1.456-2.745 1.456-3.976 0-.379 0-.757-.091-1.041H6.007zm41.322 1.325c-.364-.947-1.274-2.556-3.277-2.556s-3.641 1.61-3.641 4.071c0 2.272 1.638 4.071 3.823 4.071 1.729 0 2.822-1.136 3.186-1.799l-1.274-.947c-.455.663-1.001 1.136-1.911 1.136s-1.456-.379-1.911-1.231l5.188-2.272-.182-.473zm-5.279 1.326c0-1.515 1.183-2.367 2.002-2.367.637 0 1.274.379 1.456.852l-3.459 1.515zm-4.278 3.882h1.729V5.379h-1.729v11.834zm-2.73-6.911c-.455-.473-1.183-.947-2.093-.947-1.911 0-3.732 1.799-3.732 4.071s1.729 3.976 3.732 3.976c.91 0 1.638-.473 2.002-.947h.091v.568c0 1.515-.819 2.367-2.093 2.367-1.001 0-1.729-.757-1.911-1.42l-1.456.663C30.036 19.675 31.128 21 33.039 21c2.002 0 3.641-1.231 3.641-4.166V9.639h-1.638v.663zm-2.002 5.586c-1.183 0-2.184-1.041-2.184-2.462s1.001-2.462 2.184-2.462 2.093 1.041 2.093 2.462-.91 2.462-2.093 2.462zM55.247 5.379h-4.096v11.834h1.729v-4.45h2.367c1.911 0 3.732-1.42 3.732-3.692s-1.82-3.692-3.732-3.692zm.091 5.681h-2.457V6.988h2.457c1.274 0 2.002 1.136 2.002 1.988-.091 1.041-.819 2.083-2.002 2.083zm10.467-1.704c-1.274 0-2.549.568-3.004 1.799l1.547.663c.364-.663.91-.852 1.547-.852.91 0 1.729.568 1.82 1.515v.095c-.273-.189-1.001-.473-1.729-.473-1.638 0-3.277.947-3.277 2.651 0 1.609 1.365 2.651 2.821 2.651 1.183 0 1.729-.568 2.184-1.136h.091v.947h1.638v-4.544c-.182-2.083-1.729-3.314-3.641-3.314zm-.182 6.533c-.546 0-1.365-.284-1.365-1.041 0-.947 1.001-1.231 1.82-1.231.728 0 1.092.189 1.547.379-.182 1.136-1.092 1.894-2.002 1.894zm9.557-6.249l-1.911 5.112h-.091l-2.002-5.112h-1.82l3.004 7.195-1.729 3.976h1.729L77 9.639h-1.82zm-15.291 7.574h1.729V5.379h-1.729v11.834z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </section>
+    <!-- end of sec 8 -->
+    <!-- end of sec 9 -->
+    <section id="Commonpricingreferences">
+      <div class="container">
+        <div class="titleofsec">
+          <h2>Popular home projects</h2>
+          <a href="">View all <i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+        <div class="homeProjects">
+          <div class="homeProjCard">
+            <div class="cardimg">
+              <img src="../imgs/07.jpg" alt="" />
+            </div>
+            <div class="cardBody">
+              <div class="cardInfo">
+                <p>One-time cleaning service</p>
+                <div>
+                  <i class="fa-solid fa-star" style="color: #fac32a"></i>
+                  <p>4.9</p>
+                  <span>(256)</span>
+                  <span class="fw-semibold projectPrice">From $80</span>
+                </div>
+              </div>
+              <div class="cardButton"><button>Book Now</button></div>
+            </div>
+          </div>
+          <div class="homeProjCard">
+            <div class="cardimg">
+              <img src="../imgs/04.jpg" alt="" />
+            </div>
+            <div class="cardBody">
+              <div class="cardInfo">
+                <p>One-time cleaning service</p>
+                <div>
+                  <i class="fa-solid fa-star" style="color: #fac32a"></i>
+                  <p>4.9</p>
+                  <span>(256)</span>
+                  <span class="fw-semibold projectPrice">From $80</span>
+                </div>
+              </div>
+              <div class="cardButton"><button>Book Now</button></div>
+            </div>
+          </div>
+          <div class="homeProjCard">
+            <div class="cardimg">
+              <img src="../imgs/imgi_31_05.jpg" alt="" />
+            </div>
+            <div class="cardBody">
+              <div class="cardInfo">
+                <p>One-time cleaning service</p>
+                <div>
+                  <i class="fa-solid fa-star" style="color: #fac32a"></i>
+                  <p>4.9</p>
+                  <span>(256)</span>
+                  <span class="fw-semibold projectPrice">From $80</span>
+                </div>
+              </div>
+              <div class="cardButton"><button>Book Now</button></div>
+            </div>
+          </div>
+          <div class="homeProjCard">
+            <div class="cardimg">
+              <img src="../imgs/imgi_32_06.jpg" alt="" />
+            </div>
+            <div class="cardBody">
+              <div class="cardInfo">
+                <p>One-time cleaning service</p>
+                <div>
+                  <i class="fa-solid fa-star" style="color: #fac32a"></i>
+                  <p>4.9</p>
+                  <span class="noproj">(256)</span>
+                  <span class="fw-semibold projectPrice">From $80</span>
+                </div>
+              </div>
+              <div class="cardButton"><button>Book Now</button></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Swiper -->
+      </div>
+    </section>
+    <footer>
+      <div class="upperfooter">
+        <div class="subscribe">
+          <i class="fa-regular fa-envelope"></i>
+          <p>subscribe to oir newsellter</p>
+          <button>subscribe</button>
+        </div>
+        <div class="needhelp">
+          <p>Need help?</p>
+          <h3>contact us</h3>
+        </div>
+      </div>
+      <div class="lowerfooter">
+        <div class="infos">
+          <div class="svg">
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="svgIcon"
+                viewBox="0 0 35 34"
+              >
+                <path
+                  d="M34.5 16.894v10.731c0 3.506-2.869 6.375-6.375 6.375H17.5h-.85C7.725 33.575.5 26.138.5 17c0-9.35 7.65-17 17-17s17 7.544 17 16.894z"
+                  fill="#d85151"
+                ></path>
+                <g fill-rule="evenodd">
+                  <path
+                    d="M17.5 13.258c-3.101 0-5.655 2.554-5.655 5.655s2.554 5.655 5.655 5.655 5.655-2.554 5.655-5.655-2.554-5.655-5.655-5.655zm-9.433 5.655c0-5.187 4.246-9.433 9.433-9.433s9.433 4.246 9.433 9.433a9.36 9.36 0 0 1-1.569 5.192l2.397 2.397a1.89 1.89 0 0 1 0 2.671 1.89 1.89 0 0 1-2.671 0l-2.397-2.397a9.36 9.36 0 0 1-5.192 1.569c-5.187 0-9.433-4.246-9.433-9.433z"
+                    fill="#fff"
+                    fill-opacity=".05"
+                  ></path>
+                  <g fill="#fff">
+                    <path
+                      d="M17.394 10.153c-3.723 0-6.741 3.018-6.741 6.741s3.018 6.741 6.741 6.741 6.741-3.018 6.741-6.741-3.018-6.741-6.741-6.741zM7.347 16.894A10.05 10.05 0 0 1 17.394 6.847 10.05 10.05 0 0 1 27.44 16.894 10.05 10.05 0 0 1 17.394 26.94 10.05 10.05 0 0 1 7.347 16.894z"
+                    ></path>
+                    <path
+                      d="M23.025 22.525c.645-.645 1.692-.645 2.337 0l3.188 3.188c.645.645.645 1.692 0 2.337s-1.692.645-2.337 0l-3.187-3.187c-.645-.646-.645-1.692 0-2.337z"
+                    ></path>
+                  </g>
+                </g>
+                <path
+                  d="M23.662 14.663c2.112 0 3.825-1.713 3.825-3.825s-1.713-3.825-3.825-3.825-3.825 1.713-3.825 3.825 1.713 3.825 3.825 3.825z"
+                  fill="#fff"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  d="M23.663 8.429a2.41 2.41 0 0 0-2.408 2.408 2.41 2.41 0 0 0 2.408 2.408 2.41 2.41 0 0 0 2.408-2.408 2.41 2.41 0 0 0-2.408-2.408zm-5.242 2.408c0-2.895 2.347-5.242 5.242-5.242s5.242 2.347 5.242 5.242-2.347 5.242-5.242 5.242-5.242-2.347-5.242-5.242z"
+                  fill="#d85151"
+                ></path>
+              </svg>
+              <h3 class="fs-4 fw-semibold ps-2 mb-0">Finder</h3>
+            </a>
+            <p>
+              Connecting you with reliable local contractors for all your
+              service needs.
+            </p>
+            <div class="social">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-x-twitter"></i>
+            </div>
+          </div>
+          <div class="links">
+            <div class="popalrcatigories">
+              <h3>popalrcatigories</h3>
+              <div class="body">
+                <div class="rightlinks">
+                  <a href="#">Air conditioning</a><a href="#">Painting </a
+                  ><a href="#">Electrician </a><a href="#">Concrete </a
+                  ><a href="#">Plumbing </a><a href="#">Roofing</a>
+                </div>
+                <div class="leftlinks">
+                  <a href="#">Cleaning</a><a href="#">Pest control </a
+                  ><a href="#">Cleaning</a><a href="#">Cleaning</a
+                  ><a href="#">Heating & furnace </a><a href="#">Cleaning</a>
+                </div>
+              </div>
+            </div>
+            <div class="company">
+              <h3>company</h3>
+
+              <a href="#">Careers at Finder </a><a href="#">About </a
+              ><a href="#">About </a><a href="#">Terms of use </a
+              ><a href="#">About </a><a href="#">About </a>
+            </div>
+          </div>
+        </div>
+        <div class="buttons">
+          <h3>Top cities</h3>
+          <h4>new york</h4>
+          <h4>Chicago</h4>
+          <h4>Indianapolis</h4>
+          <h4>Boston</h4>
+          <h4>Atlanta</h4>
+          <h4>Cincinnati</h4>
+          <h4>Los Angeles</h4>
+          <h4>Dallas</h4>
+          <h4>Pittsburgh</h4>
+          <h4>Tampa</h4>
+        </div>
+        <div class="lastpart">
+          <span>© All rights reserved. Made by Createx Studio</span>
+          <div class="imgs">
+            <img src="../imgs/imgi_34_visa-dark-mode.svg" alt="visa" /><img
+              src="../imgs/imgi_34_visa-dark-mode.svg"
+              alt="logoS"
+            /><img
+              src="../imgs/imgi_36_paypal-dark-mode.svg"
+              alt="paypal logo"
+            /><img
+              src="../imgs/imgi_37_google-pay-dark-mode.svg"
+              alt="google pay logo"
+            /><img
+              src="../imgs/imgi_38_apple-pay-dark-mode.svg"
+              alt="apple pay logo"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end of sec 9 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="../js/landing.js"></script>
+  </body>
+</html>
