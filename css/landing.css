@@ -205,11 +205,9 @@ button {
 }
 /* costmizer */
 .container {
-  margin: 20px !important;
-  display: flex;
+  margin: 60px !important;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
 h1,
 h2,
@@ -408,7 +406,7 @@ nav .title {
 
 .nav-butt1,
 .nav-butt2 {
-  background-color:var(--Primary);
+  background-color: var(--Primary);
   color: var(--bg-color);
   border: none;
   padding: 10px 18px;
@@ -548,7 +546,7 @@ header .vr {
 }
 
 header form > button {
-  background-color:var(--Primary);
+  background-color: var(--Primary);
   outline: none;
   border: none;
   border-radius: 10px;
@@ -571,10 +569,11 @@ header form > button:hover {
 }
 
 .buttoms button {
+  width: auto;
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.7);
   color: white;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1rem;
   border-radius: 50rem;
   cursor: pointer;
   font-weight: 500;
@@ -591,7 +590,11 @@ header form > button:hover {
 
 /* start sec2 */
 section#browsprosSection .container {
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
 }
 section#browsprosSection a {
   color: var(--text-color);
@@ -615,11 +618,12 @@ section#browsprosSection .browses div {
 }
 section#browsprosSection .browses div a {
   color: var(--gray-text);
-  font-size: small;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
 }
 
 section#browsprosSection .browses img {
-  border-radius: 9999px;
+  border-radius: 99px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -646,7 +650,7 @@ section#browsprosSection a:hover {
 #Popularprojects .container {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  gap: 100px;
 }
 #Popularprojects .leftSide {
   width: 30%;
@@ -754,10 +758,7 @@ section#browsprosSection a:hover {
 /* end of sec3 */
 
 /* start of sec 4  */
-#homeProjectsSection {
-  display: flex;
-  justify-content: center;
-}
+
 #homeProjectsSection .container {
   flex-direction: column;
 }
@@ -779,6 +780,7 @@ section#browsprosSection a:hover {
   border-radius: 12px;
   height: 300px;
   overflow: hidden;
+  font-family: Inter, sans-serif;
 }
 #homeProjectsSection .homeProjects .homeProjCard .cardimg {
   border-radius: 12px;
@@ -803,11 +805,11 @@ section#browsprosSection a:hover {
 }
 #homeProjectsSection .homeProjects .homeProjCard .cardimg p {
   position: absolute;
-  bottom: -15%;
+  bottom: 8px;
   padding: 5px;
   color: white !important;
-  font-weight: 600;
-  font-size: 1.25rem;
+  font-weight: 700;
+  font-size: 1.3rem;
 }
 #homeProjectsSection .homeProjects .homeProjCard .cardimg i {
   position: absolute;
@@ -839,6 +841,20 @@ section#browsprosSection a:hover {
 }
 #homeProjectsSection .homeProjects .homeProjCard .cardBody .cardInfo p {
   color: var(--gray-text) !important;
+  font-size: 15px;
+}
+#homeProjectsSection .homeProjects .homeProjCard .cardBody .cardInfo p span {
+  font-size: 13px;
+  color: rgb(161, 159, 159) !important;
+}
+#homeProjectsSection
+  .homeProjects
+  .homeProjCard
+  .cardBody
+  .cardInfo
+  span:nth-of-type(1) {
+  font-size: 15px;
+  font-weight: 600;
 }
 
 #homeProjectsSection .homeProjects .homeProjCard .cardBody .cardButton button {
@@ -957,17 +973,25 @@ section#browsprosSection a:hover {
 /* start of sec 6  */
 #howitworks {
   display: flex;
+  justify-content: start;
 }
 #howitworks .container {
   flex-direction: column;
   gap: 30px;
   justify-content: start;
   align-items: start;
+  margin: 0 40px !important;
 }
-
+#howitworks .title {
+  margin-bottom: 30px;
+}
+#howitworks .title h2 {
+  margin-bottom: 20px;
+  font-size: 32px;
+}
 #howitworks .infocards {
   display: flex;
-  gap: 32px;
+  gap: 50px;
 }
 #howitworks .info h3 {
   padding-block: 10px;
@@ -1442,9 +1466,11 @@ footer .lowerfooter .infos .links .company a:hover {
 }
 footer .lowerfooter .buttons {
   display: flex;
+  flex-direction: row !important;
   flex-wrap: wrap;
 }
-footer .lowerfooter .buttons h3 {
+footer .lowerfooter h3 {
+  margin-bottom: 20px;
   color: white !important;
   font-size: 22px;
 }
@@ -1452,9 +1478,11 @@ footer .lowerfooter .buttons h4 {
   color: rgb(201, 201, 201) !important;
   margin-inline: 12px;
   font-family: inter;
+  width: 10%;
   font-size: 15px;
   font-weight: 500;
   padding: 10px 15px;
+  margin: 10px;
   border: 1px solid #666;
   border-radius: 30px;
   transition: all 0.2s ease-in-out;
@@ -1476,121 +1504,159 @@ footer .lowerfooter .lastpart .imgs img {
   border: 4px solid #000000;
   margin-inline: 6px;
 }
-.home-projects-slider {
+.swiper {
+  overflow: visible;
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: -28px;
+  left: 0;
   width: 100%;
-  padding-bottom: 40px;
-  display: block;
 }
-
-.swiper-slide {
-  height: 50%;
-}
-
-.swiper-pagination-bullet {
-  background: #cccccc;
-  height: 10px;
-}
-
 .swiper-pagination-bullet-active {
-  background: var(--Primary, #d85151);
+  background: rgb(173, 17, 17);
 }
-.home-projects-slider {
-  width: 100%;
-  padding-bottom: 50px;
-  display: none;
-}
-
-.home-projects-slider .swiper-slide {
-  height: auto;
-  padding: 5px;
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.home-projects-slider .homeProjCard {
-  width: 50%;
-  background-color: var(--bg-color, #fff);
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  display: flex;
-  flex-direction: column;
-  transition: 0.3s ease;
-}
-
-.home-projects-slider .homeProjCard:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
-}
-
-.home-projects-slider .homeProjCard .cardimg {
-  position: relative;
-  height: 250px;
-}
-
-.home-projects-slider .homeProjCard .cardimg img {
+.swiper-slide img {
+  display: block;
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
-.home-projects-slider .cardBody {
-  padding: 40px;
+.swiper .swiper-wrapper .swiper-slide .homeProjCard:hover .cardimg img {
+  transform: scale(1.1);
+}
+.swiper .swiper-wrapper .swiper-slide .homeProjCard:hover .cardimg i {
+  visibility: visible;
+}
+
+.swiper .swiper-wrapper .swiper-slide .homeProjCard {
+  border: 1px solid rgb(128, 128, 128, 0.2);
+  border-radius: 12px;
+  height: 350px;
+  width: 80%;
+  overflow: hidden;
+  font-family: Inter, sans-serif;
+}
+.swiper .swiper-wrapper .swiper-slide .homeProjCard .cardimg {
+  border-radius: 12px;
+  position: relative;
+  height: 80%;
+  overflow: hidden;
+}
+
+.swiper .swiper-wrapper .swiper-slide .homeProjCard .cardimg img {
+  height: 100%;
+  width: 100%;
+  transition: 0.5s;
+  object-fit: fill;
+}
+.swiper .swiper-wrapper .swiper-slide .homeProjCard .overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.swiper .swiper-wrapper .swiper-slide .homeProjCard .cardimg p {
+  position: absolute;
+  bottom: 8px;
+  padding: 5px;
+  color: white !important;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.swiper .swiper-wrapper .swiper-slide .homeProjCard .cardimg i {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  background-color: #eeeeee;
+  z-index: 5;
+  font-size: 15px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  text-align: center;
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+
+.swiper .swiper-wrapper .swiper-slide .homeProjCard .cardBody {
+  display: flex;
+  align-items: baseline;
   justify-content: space-between;
-  align-items: center;
-  gap: 10px;
+  padding: 18px 10px 0;
 }
-
-.home-projects-slider .cardInfo {
+.swiper .swiper-wrapper .swiper-slide .homeProjCard .cardBody .cardInfo {
   display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-grow: 1;
+  gap: 10px;
+  align-items: baseline;
 }
-
-.home-projects-slider .cardInfo > * {
-  margin: 0;
+.swiper .swiper-wrapper .swiper-slide .homeProjCard .cardBody .cardInfo p {
   color: var(--gray-text) !important;
   font-size: 15px;
-  display: flex;
 }
-
-.home-projects-slider .cardInfo .projectPrice {
+.swiper .swiper-wrapper .swiper-slide .homeProjCard .cardBody .cardInfo p span {
+  font-size: 13px;
+  color: rgb(161, 159, 159) !important;
+}
+#homeProjectsSection
+  .homeProjects
+  .homeProjCard
+  .cardBody
+  .cardInfo
+  span:nth-of-type(1) {
+  font-size: 15px;
   font-weight: 600;
-  color: var(--text-color) !important;
 }
 
-.home-projects-slider .cardButton button {
+.swiper
+  .swiper-wrapper
+  .swiper-slide
+  .homeProjCard
+  .cardBody
+  .cardButton
+  button {
   background-color: transparent;
-  border: 1px solid #d1d5db;
+  padding: 5px 15px;
+  border-radius: 10px;
+  border: 1px solid var(--gray-text);
+  outline: none;
   color: var(--text-color);
-  padding: 8px 16px;
-  border-radius: 8px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s;
 }
-
-.home-projects-slider .cardButton button:hover {
+#homeProjectsSection
+  .homeProjects
+  .homeProjCard
+  .cardBody
+  .cardButton
+  button:hover {
   background-color: var(--text-color);
-  color: var(--bg-color, #fff);
-  border-color: var(--text-color);
+  color: var(--bg-color);
+}
+.swiper {
+  max-width: 850px;
+  display: none;
 }
 
-.home-projects-slider .swiper-pagination {
-  bottom: 15px !important;
-}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-.home-projects-slider .swiper-pagination-bullet {
-  background: #aaaaaa;
-  width: 9px;
-  height: 9px;
-  opacity: 0.7;
-}
+  gap: 30px;
 
-.home-projects-slider .swiper-pagination-bullet-active {
-  background: var(--Primary, #d85151);
-  opacity: 1;
+  font-weight: bold;
 }

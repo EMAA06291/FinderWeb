@@ -12,11 +12,33 @@
   .navbar {
     padding: 10px 20px;
   }
+  .Noswiper {
+    display: none;
+  }
+  footer .lowerfooter .buttons h4 {
+    width: 12%;
+  }
+  #Popularprojects .container {
+    gap: 120px;
+  }
+}
+  #Popularprojects .leftSide img {
+  width: 270px;
+
 }
 
 @media only screen and (max-width: 1180px) {
   nav .nav-butt1 {
     display: none;
+  }
+  footer .lowerfooter .buttons h4 {
+    width: 15%;
+  }
+  .Noswiper {
+    display: none;
+  }
+  .swiper {
+    display: block !important;
   }
   nav .title {
     width: 100%;
@@ -36,7 +58,7 @@
   .nav-list-item:nth-child(1) > .acButt {
     padding-inline: 50px;
   }
-  .nav-list-item:nth-child(-n+4) > .acButt::after {
+  .nav-list-item:nth-child(-n + 4) > .acButt::after {
     padding-inline: 10px;
   }
   .nav-links-container {
@@ -62,9 +84,6 @@
   .nav-links-container.active {
     transform: translateX(0);
   }
-  .home-projects-slider {
-    display: block;
-  }
   .Noswiper {
     display: none;
   }
@@ -80,12 +99,23 @@
     display: flex;
     flex-direction: column;
   }
+  #Popularprojects .container {
+    gap: 150px;
+  }
+  #Popularprojects .leftSide img {
+  width: 250px;
+
+}
 }
 
 @media only screen and (max-width: 991px) {
   .nav-links-container {
- 
-    width: 30%;}
+    width: 30%;
+  }
+  
+  footer .lowerfooter .buttons h4 {
+    width: 17%;
+  }
   .nav-butt2 {
     display: flex;
     padding: 8px 15px;
@@ -179,22 +209,46 @@
   .nav-list-item:nth-child(1) > .acButt {
     padding-inline: 50px;
   }
-  .nav-list-item:nth-child(-n+4) > .acButt::after {
+  .nav-list-item:nth-child(-n + 4) > .acButt::after {
     padding-inline: 10px;
+  }
+  .swiper .swiper-wrapper .swiper-slide .homeProjCard {
+    border: 1px solid rgb(128, 128, 128, 0.2);
+    border-radius: 12px;
+    height: 350px;
+    width: 90%;
+    overflow: hidden;
+    font-family: Inter, sans-serif;
+  }
+  section#browsprosSection .browses div {
+    flex: 50%;
+  }
+  section#browsprosSection .browses img {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+  }
+  section#browsprosSection .browses div a {
+    font-size: 15px;
   }
 }
 
 @media (max-width: 768px) {
   header h1 {
-    font-size: 32px;
+    font-size: 47px;
   }
-    .nav-links-container {
- 
-    width: 35%;}
+  footer .lowerfooter .buttons h4 {
+    width: 20%;
+  }
+  header form {
+    width: 80%;
+  }
+  .nav-links-container {
+    width: 35%;
+  }
   header form {
     flex-direction: column;
     gap: 1rem;
-    background-color: transparent;
   }
   .searchIcon {
     left: 3% !important;
@@ -239,17 +293,24 @@
   .nav-list-item:nth-child(1) > .acButt {
     padding-inline: 50px;
   }
-  .nav-list-item:nth-child(-n+4) > .acButt::after {
+  .nav-list-item:nth-child(-n + 4) > .acButt::after {
     padding-inline: 10px;
+  }
+  .swiper .swiper-wrapper .swiper-slide .homeProjCard {
+    width: 370px !important;
+    height: 270px;
   }
 }
 
 @media only screen and (max-width: 575px) {
-    .nav-links-container {
- 
-    width: 50%;}
+  .nav-links-container {
+    width: 50%;
+  }
   header {
     background-size: 300%;
+  }
+  footer .lowerfooter .buttons h4 {
+    width: 25%;
   }
   .navbar {
     padding: 10px 15px;
@@ -261,6 +322,9 @@
     display: flex;
     flex-wrap: wrap;
   }
+  header form {
+    width: 80%;
+  }
   header h1 {
     font-size: 30px;
     padding-top: 100px;
@@ -270,8 +334,10 @@
     width: 75%;
     right: 11.4% !important;
   }
+  .buttoms {
+margin-bottom: 50px;
+}
   form input {
-    padding-bottom: 50px !important;
     padding-left: 50px !important;
     border-radius: 0 !important;
   }
@@ -294,11 +360,15 @@
   }
   section#browsprosSection .browses div {
     display: flex;
-    width: 50%;
+    width: 100%;
   }
   section#browsprosSection h2 {
-    font-size: 20px;
+    font-size: 17px;
     padding: 20px;
+  }
+
+  #browsprosSection .container .titleofsec a {
+    font-size: 13px;
   }
   #Popularprojects .container .rightSide .rightSideContent {
     width: 100%;
@@ -310,9 +380,7 @@
   .Noswiper {
     display: none;
   }
-  .swiper-wrapper {
-    display: block;
-  }
+
   footer .lowerfooter .links {
     gap: 50px;
   }
@@ -336,7 +404,38 @@
   .nav-list-item:nth-child(1) > .acButt {
     padding-inline: 50px;
   }
-  .nav-list-item:nth-child(-n+4) > .acButt::after {
+  .nav-list-item:nth-child(-n + 4) > .acButt::after {
     padding-inline: 10px;
   }
+  .swiper .swiper-wrapper .swiper-slide .homeProjCard {
+    width: 320px !important;
+    height: 250px;
+  }
+  header form {
+    gap: 0;
+  }
+  section#browsprosSection .browses div {
+    flex: 100%;
+  }
+  section#browsprosSection .container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+  section#browsprosSection .browses img {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+  }
+}
+@media only screen and (max-width: 390px) {
+  header form {
+    gap: 0;
+  }
+  footer .lowerfooter .buttons h4 {
+    width: 29%;
+  }
+    .buttoms {
+margin-bottom: 100px;
+}
 }

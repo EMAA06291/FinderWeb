@@ -44,38 +44,7 @@ themeSwitch.addEventListener("click", () => {
   darkmode !== "active" ? enableDarkmode() : disableDarkmode();
 });
 
-// swiper code js
-document.addEventListener("DOMContentLoaded", function () {
-  const swiper = new Swiper(".home-projects-slider", {
-    enabled: false,
-    slidesPerView: 3,
-    spaceBetween: 30,
 
-    breakpoints: {
-      991: {
-        enabled: true,
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      768: {
-        enabled: true,
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      575: {
-        enabled: true,
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-    },
-
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    grabCursor: true,
-  });
-});
 
 // side bar habdling close and open
 menuIcon.addEventListener("click", function () {
@@ -118,7 +87,7 @@ document.addEventListener("click", function (event) {
   }
 });
 // custmizer color sidebarconst
-const root = document.documentElement;
+ root = document.documentElement;
 
 const defaultColors = {
   primary: "#d85151",
@@ -211,3 +180,5 @@ storeOriginalButtonColors();
 loadSavedColors();
 Object.keys(defaultColors).forEach((c) => initColor(c));
 applyTheme();
+
+
